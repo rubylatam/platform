@@ -1,11 +1,17 @@
-const defaultTheme = require("tailwindcss/defaultTheme");
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  content: ["./**/*.html"],
+  content: [
+    './public/*.html',
+    './app/helpers/**/*.rb',
+    './app/javascript/**/*.js',
+    './app/views/**/*.{erb,haml,html,slim}'
+  ],
   safelist: ["dark"],
   darkMode: "class",
   theme: {
     fontFamily: {
+      sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       body: ["Poppins", "sans-serif"],
     },
 
@@ -154,9 +160,11 @@ module.exports = {
     },
   },
   plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/aspect-ratio'),
+    require('@tailwindcss/container-queries'),
     require("@tailwindcss/typography")({
       modifiers: [],
-    }),
-    require("@tailwindcss/forms"),
+    })
   ],
 };
