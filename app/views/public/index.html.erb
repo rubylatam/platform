@@ -21,47 +21,6 @@
         </g>
       </svg>
     </div>
-    <!-- <div class="hidden lg:block">
-      <ul class="flex items-center">
-
-        <li class="group relative mr-6 mb-1">
-          <div
-            class="absolute left-0 bottom-0 z-20 h-0 w-full opacity-75 transition-all group-hover:h-2 group-hover:bg-yellow">
-          </div>
-          <a href="/"
-            class="relative z-30 block px-2 font-body text-lg font-medium text-primary transition-colors group-hover:text-green dark:text-white dark:group-hover:text-secondary">Intro</a>
-        </li>
-
-        <li class="group relative mr-6 mb-1">
-          <div
-            class="absolute left-0 bottom-0 z-20 h-0 w-full opacity-75 transition-all group-hover:h-2 group-hover:bg-yellow">
-          </div>
-          <a href="/blog"
-            class="relative z-30 block px-2 font-body text-lg font-medium text-primary transition-colors group-hover:text-green dark:text-white dark:group-hover:text-secondary">Blog</a>
-        </li>
-
-        <li class="group relative mr-6 mb-1">
-          <div
-            class="absolute left-0 bottom-0 z-20 h-0 w-full opacity-75 transition-all group-hover:h-2 group-hover:bg-yellow">
-          </div>
-          <a href="/uses"
-            class="relative z-30 block px-2 font-body text-lg font-medium text-primary transition-colors group-hover:text-green dark:text-white dark:group-hover:text-secondary">Uses</a>
-        </li>
-
-        <li class="group relative mr-6 mb-1">
-          <div
-            class="absolute left-0 bottom-0 z-20 h-0 w-full opacity-75 transition-all group-hover:h-2 group-hover:bg-yellow">
-          </div>
-          <a href="/contact"
-            class="relative z-30 block px-2 font-body text-lg font-medium text-primary transition-colors group-hover:text-green dark:text-white dark:group-hover:text-secondary">Contact</a>
-        </li>
-
-        <li>
-          <i class="bx cursor-pointer text-3xl text-primary dark:text-white" @click="themeSwitch()"
-            :class="isDarkMode ? 'bxs-sun' : 'bxs-moon'"></i>
-        </li>
-      </ul>
-    </div> -->
   </div>
 </div>
 
@@ -92,143 +51,49 @@
   </div>
 </div>
 
-
 <div>
   <div class="container mx-auto">
     <div class="border-b border-grey-lighter py-16 lg:py-20">
-      <span href="/" class="mr-2">
-        <%= image_tag("author.png", alt: "juan medina photo", class: "h-16") %>
-      </span>
-      <h1 class="pt-3 font-body text-4xl font-semibold text-primary dark:text-white md:text-5xl lg:text-6xl">
-        Hola, soy Juan Medina.
+      <h1 class="pt-3 font-body text-2xl font-semibold text-primary dark:text-white md:text-5xl lg:text-6xl">
+        Obtén experiencia como programador!
       </h1>
       <p class="pt-3 font-body text-xl font-light text-primary dark:text-white">
-        Ingeniero de software con <i >product mindset</i>, enamorado de Ruby y apasionado por las startups.
+        Aprende sobre buenas prácticas y contribuye a una aplicación real mientras aprendes un lenguaje divertido enfocado en la felicidad el desarrollador.
       </p>
-      <!-- <a href="/"
-        class="mt-12 block bg-secondary px-10 py-4 text-center font-body text-xl font-semibold text-white transition-colors hover:bg-red sm:inline-block sm:text-left sm:text-2xl">
-        Say Hello!
-      </a> -->
     </div>
 
     <div class="border-b border-grey-lighter py-16 lg:py-20">
       <div class="flex items-center pb-6">
         <%= image_tag("icon-story.png", alt: "icon story") %>
         <h3 class="ml-3 font-body text-2xl font-semibold text-primary dark:text-white">
-          ¿De qué se trata esto?
+          Sobre RubyLatam
         </h3>
       </div>
       <div>
-        <p class="font-body font-light text-primary dark:text-white">
-
-          Ruby cambió mi vida y quiero compartir el amor que le tengo con todo el mundo.
+        <p class="text-justify font-body font-light text-primary dark:text-white">
+          Ruby cambió nuestra vida y quieremos compartir el amor que le tenemos con todo el mundo.
+          Queremos dar a conocer lo divertido y sencillo que es utilizar este lenguaje y dar algo experiencia real a quien se anime a utilizarlo.
+          <br />
           Esta es una plataforma para hablar cosas relacionadas a Ruby, construir productos digitales, aprender y crecer!
           <br />
-          <br />
-           
         </p>
       </div>
     </div>
-
-    <!-- <div class="py-16 lg:py-20">
-      <div class="flex items-center pb-6">
-        <%= image_tag("icon-story.png", alt: "icon story") %>
-        <h3 class="ml-3 font-body text-2xl font-semibold text-primary dark:text-white">
-          My Story
-        </h3>
-        <a href="/blog"
-          class="flex items-center pl-10 font-body italic text-green transition-colors hover:text-secondary dark:text-green-light dark:hover:text-secondary">
-          All posts
-          <%= image_tag("long-arrow-right.png", alt: "arrow right", class: "ml-3") %>
-        </a>
-      </div>
-      <div class="pt-8">
-        <div class="border-b border-grey-lighter pb-8">
-          <span
-            class="mb-4 inline-block rounded-full bg-green-light px-2 py-1 font-body text-sm text-green">category</span>
-          <a href="/post"
-            class="block font-body text-lg font-semibold text-primary transition-colors hover:text-green dark:text-white dark:hover:text-secondary">Quis
-            hendrerit dolor magna eget est lorem ipsum dolor sit</a>
-          <div class="flex items-center pt-4">
-            <p class="pr-2 font-body font-light text-primary dark:text-white">
-              July 19, 2020
-            </p>
-            <span class="font-body text-grey dark:text-white">//</span>
-            <p class="pl-2 font-body font-light text-primary dark:text-white">
-              4 min read
-            </p>
-          </div>
-        </div>
-        <div class="border-b border-grey-lighter pt-10 pb-8">
-          <div class="flex items-center">
-            <span
-              class="mb-4 inline-block rounded-full bg-grey-light px-2 py-1 font-body text-sm text-blue-dark">category</span>
-            <span
-              class="mb-4 ml-4 inline-block rounded-full bg-yellow-light px-2 py-1 font-body text-sm text-yellow-dark">category</span>
-          </div>
-          <a href="/post"
-            class="block font-body text-lg font-semibold text-primary transition-colors hover:text-green dark:text-white dark:hover:text-secondary">Senectus
-            et netus et malesuada fames ac turpis egestas integer</a>
-          <div class="flex items-center pt-4">
-            <p class="pr-2 font-body font-light text-primary dark:text-white">
-              June 30, 2020
-            </p>
-            <span class="font-body text-grey dark:text-white">//</span>
-            <p class="pl-2 font-body font-light text-primary dark:text-white">
-              5 min read
-            </p>
-          </div>
-        </div>
-        <div class="border-b border-grey-lighter pt-10 pb-8">
-          <span
-            class="mb-4 inline-block rounded-full bg-blue-light px-2 py-1 font-body text-sm text-blue">category</span>
-          <a href="/post"
-            class="block font-body text-lg font-semibold text-primary transition-colors hover:text-green dark:text-white dark:hover:text-secondary">Vulputate
-            ut pharetra sit amet aliquam id diam maecenas ultricies</a>
-          <div class="flex items-center pt-4">
-            <p class="pr-2 font-body font-light text-primary dark:text-white">
-              June 26, 2020
-            </p>
-            <span class="font-body text-grey dark:text-white">//</span>
-            <p class="pl-2 font-body font-light text-primary dark:text-white">
-              3 min read
-            </p>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
   </div>
 </div>
 
 <div class="container mx-auto">
   <div class="flex flex-col items-center justify-between border-t border-grey-lighter py-10 sm:flex-row sm:py-12">
     <div class="mr-auto flex flex-col items-center sm:flex-row">
-      <a href="/" class="mr-auto sm:mr-6">
-        <!-- <%= image_tag("logo.svg", alt: "Logo", class: "h-12") %> -->
-      </a>
       <p class="pt-5 font-body font-light text-primary dark:text-white sm:pt-0">
         ©2023 Ruby Latam
       </p>
     </div>
     <div class="mr-auto flex items-center pt-5 sm:mr-0 sm:pt-0">
-
-      <!-- <a href="https://codepen.io/ " target="_blank"> Codepen
-        <i
-          class="text-4xl text-primary dark:text-white pl-5 hover:text-secondary dark:hover:text-secondary transition-colors bx bxl-codepen"></i>
-      </a>
-
-      <a href="https://www.linkedin.com/ " target="_blank"> Linkedin
-        <i
-          class="text-4xl text-primary dark:text-white pl-5 hover:text-secondary dark:hover:text-secondary transition-colors bx bxl-linkedin"></i>
-      </a> -->
-
-
       <a href="https://github.com/rubylatam" target="_blank">
         <i
           class="text-4xl text-primary dark:text-white pl-5 hover:text-secondary dark:hover:text-secondary transition-colors bx bxl-github"></i>
       </a>
-
     </div>
   </div>
 </div>
