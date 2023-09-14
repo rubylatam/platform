@@ -30,6 +30,10 @@
           <a href="https://rubylatam.substack.com/" target="_blank"
             class="relative z-30 block px-2 font-body text-lg font-medium text-primary transition-colors group-hover:text-green dark:text-white dark:group-hover:text-secondary">Blog</a>
         </li>
+        <li>
+          <i class="bx cursor-pointer text-3xl text-primary dark:text-white" @click="themeSwitch()"
+            :class="isDarkMode ? 'bxs-sun' : 'bxs-moon'"></i>
+        </li>
       </ul>
     </div>
   </div>
@@ -38,7 +42,7 @@
 <div
   class="pointer-events-none fixed inset-0 z-50 flex bg-black bg-opacity-80 opacity-0 transition-opacity lg:hidden"
   :class="isMobileMenuOpen ? 'opacity-100 pointer-events-auto' : ''">
-  <div class="ml-auto w-2/3 bg-black p-4 md:w-1/3">
+  <div class="ml-auto w-2/3 bg-red p-4 md:w-1/3">
     <i class="bx bx-x absolute top-0 right-0 mt-4 mr-4 text-4xl text-white" @click="isMobileMenuOpen = false"></i>
     <ul class="mt-8 flex flex-col">
       <li class="">
