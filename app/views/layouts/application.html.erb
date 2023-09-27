@@ -17,9 +17,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   </head>
 
-  <body  x-data="global()" x-init="themeInit()" :class="isMobileMenuOpen ? 'max-h-screen overflow-hidden relative' : ''" class="dark:bg-primary">
-    <div id="main">
+  <body  x-data="global()" x-init="themeInit()" :class="isMobileMenuOpen ? 'max-h-screen overflow-hidden relative' : ''" class="dark:bg-primary container mx-auto p-0 flex flex-col min-h-screen">
+    <%= render "layouts/header" %>
+    <div id="main" class="container mx-auto p-0">
       <%= yield %>
     </div>
+    <%= render "layouts/footer" %>
   </body>
 </html>
