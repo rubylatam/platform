@@ -2,7 +2,7 @@ require "active_support/core_ext/integer/time"
 
 Rails.application.configure do
 
-  config.hosts << /[a\-z0\-9\-.]+\.csb\.app/
+  config.hosts << /[a-z0-9\-.]+\.csb\.app/
 
   # Settings specified here will take precedence over those in config/application.rb.
 
