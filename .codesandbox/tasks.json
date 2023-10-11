@@ -3,7 +3,7 @@
   "setupTasks": [
     {
       "name": "Installing Dependencies",
-      "command": "bundle install"
+      "command": "bundle install --gemfile Gemmfile"
     }
   ],
 
